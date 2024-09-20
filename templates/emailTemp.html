@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: black !important;
+            font-family: Arial, sans-serif;
+            /* background-color: #0066cc; */
+        }
+
+        .container {
+            width: 100%;
+            /* background-color: #0066cc; */
+            /* color: #ffffff; */
+        }
+
+        .header {
+            font-size: 32px;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        .content {
+            /* background-color: #0073e6; */
+            border-radius: 8px;
+        }
+
+        .content h2 {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 20px 0 10px;
+        }
+
+        .kyw-id {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 24px;
+            margin: 20px 0;
+            border: 2px dashed black;
+            display: inline-block;
+            /* color: #ffffff; */
+        }
+
+        .btn {
+            /* background-color: #ffffff; */
+            color: #0073e6;
+            border-radius: 30px;
+            border: 1px solid;
+            padding: 10px 24px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .program-info {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .separator {
+            margin: 30px 0;
+            width: 70%;
+            border-bottom: 1px solid black;
+        }
+
+        .footer {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        a {
+            color: black !important;
+            text-decoration: none;
+        }
+
+        .contact-info {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <div>Bootcamp180</div>
+        </div>
+
+        <!-- KYW ID Section -->
+        <div class="content">
+            <h2>KYW ID</h2>
+            <p>Hi {{userName}},</p>
+            <p style="font-size: 13px;">Thank you for completing the "Know Your Worth" quiz! Here is your KYW ID</p>
+
+            <div class="kyw-id">
+                {{kywId}}
+            </div>
+
+            <div> <a href="https://bootcamp180.com/slot-booking" class="btn">Enroll Now</a> </div>
+
+            <p class="program-info" style="font-size: 13px; width: 80%;">
+                This ID allows you to enroll in <strong>Bootcamp.180</strong>, our paid training program designed to
+                empower you and ensure a balanced work-life approach.
+            </p>
+        </div>
+
+
+          <!-- Footer Section -->
+        <div class="footer" style="margin-top: 40px;">
+            <p>For any questions, feel free to contact us at</p>
+            <p><a href="mailto:experience@invicious.in">experience@invicious.in</a></p>
+            <p class="contact-info">
+                9150043778, 8877880101
+            </p>
+            <p>For more details, click below 👇</p>
+
+            <div className='social-icons' style="margin-top: 40px;">
+                <a href="https://www.instagram.com/bootcamp.180/" style=" margin-right: 20px;">
+
+                    <img src='https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2016/png/iconmonstr-instagram-11.png&r=0&g=0&b=0'
+                        width="18px" alt='img' />
+
+                </a>
+                <a href="https://wa.me/9150043778" style=" margin-right: 20px;">
+                    <img src='https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2016/png/iconmonstr-whatsapp-1.png&r=0&g=0&b=0'
+                        width="18px" alt='img' />
+                </a>
+
+                <a href="https://www.linkedin.com/company/bootcamp-180/">
+
+                    <img width="18px"
+                        src='https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-linkedin-1.png&r=0&g=0&b=0'
+                        alt='img' />
+
+                </a>
+            </div>
+        </div>
+
+        <footer className="footer" style="margin-top: 40px;">
+
+         
+
+            <div className='footer-links' style="margin-top: 20px;">
+                <a href="https://bootcamp180.in/t&c">Terms & Conditions</a> |
+                <a href="https://bootcamp180.in/privacy-policy">Privacy Policy</a> |
+                <a href="https://bootcamp180.in/refund-policy">Return & Refund Policy</a>
+
+            </div>
+
+            <div className='rights'>
+                © 2024 Invicious. All rights reserved.
+            </div>
+
+
+        </footer>
+    </div>
+
+</body>
+
+</html>

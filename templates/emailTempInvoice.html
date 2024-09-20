@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: black;
+        }
+
+        .container {
+            width: 100%;
+            /* max-width: 600px; */
+            margin: 0 auto;
+            color: black;
+        }
+
+        .header {
+            font-size: 32px;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        .content {
+            border-radius: 8px;
+        }
+
+        .content h2 {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 20px 0 10px;
+        }
+
+        .program-details,
+        .office-address {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .program-details strong {
+            font-size: 16px;
+        }
+
+        .separator {
+            margin: 30px 0;
+            border-bottom: 1px solid black;
+        }
+
+        .footer {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .contact-info {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <div>Bootcamp180</div>
+        </div>
+
+        <!-- Invoice and Slot Confirmation Section -->
+        <div class="content">
+            <h2>INVOICE & SLOT CONFIRMATION</h2>
+            <p style="text-transform: uppercase;"> Hi {{userName}},</p>
+            <p>
+                Thank you for choosing to enroll in our training program! We've successfully received your initial
+                registration fee for {{selectedProgram}} training program.
+            </p>
+
+            <h2>PROGRAM DETAILS:</h2>
+            <div class="program-details">
+                <p>Program Chosen: <strong>{{selectedPrograms}}</strong></p>
+                <p>Scheduled Slot: <strong>{{bookedSlotDetails}}</strong></p>
+            </div>
+
+            <h2>OFFICE ADDRESS:</h2>
+            <div class="office-address">
+                <a
+                    href="https://www.google.com/maps/search/124H,+Thendral+Complex,+DB+Road,+RS+Puram,+Coimbatore+-+641002./@11.0082013,76.9412557,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">
+                    <p style="line-height: 28px;"><b>Consulting Office</b> - H, 3rd Floor, Thendral Complex,
+                        124, Diwan Bahadur Rd, R.S. Puram, Coimbatore,
+                        Tamil Nadu 641002</p>
+                </a>
+            </div>
+
+            <p style=" line-height: 28px;"><strong>Important:</strong> Please ensure you attend your
+                scheduled slot. If you miss
+                it, you will only have one additional opportunity to enroll, and this will only be allowed under valid
+                or unfortunate circumstances. No refunds will apply.</p>
+        </div>
+
+        <!-- Separator Line -->
+        <div class="separator"></div>
+
+        <div> <b>Checkout Summary</b></div>
+
+        <div>
+            <div style="margin-top: 30px;">Initial Payment :  ₹ {{base}} </div>
+        </div>
+
+        <div >
+            <div style="margin-top: 30px;">Tax/Gst(18%) : ₹ {{gst}} </div>
+        </div>
+
+        <div class="separator" style="width:240px; margin: 20px 0;"></div>
+
+        <div >
+            <div style="margin-top: 30px;"><b>Total amount : ₹ {{total}}.00 </b> </div>
+        </div>
+
+
+
+        <div class="separator"></div>
+
+
+        <!-- Footer Section -->
+        <div class="footer">
+            <p>We look forward to seeing you. Should you have any questions, feel free to reach out to us at</p>
+            <p><a href="mailto:experience@invicious.in">experience@invicious.in</a> or call 9150043778, 8877880101</p>
+            <p>For more details, click below 👇</p>
+            <div className='social-icons' style="margin-top: 40px;">
+                <a href="https://www.instagram.com/bootcamp.180/" style=" margin-right: 20px;">
+
+                    <img src='https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2016/png/iconmonstr-instagram-11.png&r=0&g=0&b=0'
+                        width="18px" alt='img' />
+
+                </a>
+                <a href="https://wa.me/9150043778" style=" margin-right: 20px;">
+                    <img src='https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2016/png/iconmonstr-whatsapp-1.png&r=0&g=0&b=0'
+                        width="18px" alt='img' />
+                </a>
+
+                <a href="https://www.linkedin.com/company/bootcamp-180/">
+
+                    <img width="18px"
+                        src='https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-linkedin-1.png&r=0&g=0&b=0'
+                        alt='img' />
+
+                </a>
+            </div>
+        </div>
+
+        <footer className="footer" style="margin-top: 40px;">
+
+
+
+            <div className='footer-links' style="margin-top: 20px;">
+                <a href="https://bootcamp180.in/t&c">Terms & Conditions</a> |
+                <a href="https://bootcamp180.in/privacy-policy">Privacy Policy</a> |
+                <a href="https://bootcamp180.in/refund-policy">Return & Refund Policy</a>
+
+            </div>
+
+            <div className='rights'>
+                © 2024 Invicious. All rights reserved.
+            </div>
+
+
+        </footer>
+    </div>
+
+</body>
+
+</html>
